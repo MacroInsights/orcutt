@@ -2,7 +2,7 @@ Package: orcutt
 Type: Package
 Title: Estimate Procedure in Case of First Order Autocorrelation
 Version: 2.4
-Date: 2024-09-21
+Date: 2025-03-21
 Authors@R: c(person("Stefano", "Spada", role = c("aut", "cre"), email = "lostefanospada@gmail.com"),
              person("Matteo", "Quartagno", role = "ctb"),
              person("Marco", "Tamburini", role = "ctb"),
