@@ -1,11 +1,13 @@
-#' Print method for Cochrane-Orcutt estimation
+#' Title
 #'
-#' Displays results from a Cochrane-Orcutt model fit.
+#' @param x
+#' @param ...
 #'
-#' @param x An object of class \code{orcutt}.
-#' @param ... Additional arguments (currently unused).
+#' @returns
 #' @export
-print.orcutt <- function(x, ...) {
+#'
+#' @examples
+print_orcutt <- function(x, ...) {
     # title
     cat("Cochrane-orcutt estimation for first order autocorrelation \n \n")
 
