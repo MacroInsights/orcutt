@@ -4,7 +4,9 @@ Title: Estimate Procedure in Case of First Order Autocorrelation
 Version: 2.4
 Date: 2025-03-21
 Authors@R: c(
-  person("Stefano", "Spada", role = c("aut", "cre"), email = "lostefanospada@gmail.com"),
+  person("Stefano", "Spada", role = "aut", email = "lostefanospada@gmail.com"),
+  person("Mark", "Burkey", role = "cre", email = "markburkey@example.com"),
+  person("Alfredo", "Romero", role = "ctb", email = "alfredo.romero@example.com"),
   person("Matteo", "Quartagno", role = "ctb"),
   person("Marco", "Tamburini", role = "ctb"),
   person("David", "Robinson", role = "ctb"))
