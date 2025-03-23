@@ -2,4 +2,5 @@
 
 S3method(print,orcutt)
 export("%>%")
+export(cochrane.orcutt)
 importFrom(magrittr,"%>%")
