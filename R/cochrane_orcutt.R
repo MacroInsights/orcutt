@@ -1,10 +1,21 @@
-#' Title of the function
+#' Cochrane-Orcutt Estimation Procedure
 #'
-#' Description of what the function does.
+#' Applies the Cochrane-Orcutt iterative procedure to correct for first-order autocorrelation in linear regression residuals.
 #'
-#' @param x Description of parameter x.
-#' @return What the function returns.
+#' @param reg A linear model object from \code{lm()}.
+#' @param convergence Number of decimal places to check for convergence of \code{rho}. Default is 8.
+#' @param max.iter Maximum number of iterations allowed. Default is 100.
+#'
+#' @return An object of class \code{orcutt}, which includes corrected coefficients, standard errors, residuals, fitted values,
+#' autocorrelation estimates, and model statistics.
+#'
 #' @export
+#'
+#' @examples
+#' data(icecream)
+#' ols_model <- lm(cons ~ temp, data = icecream)
+#' oc_model <- cochrane_orcutt(ols_model)
+#' summary_orcutt(oc_model)
 cochrane_orcutt <-
 function(reg, convergence = 8, max.iter=100){
     #if (!require('lmtest')) {

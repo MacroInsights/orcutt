@@ -2,16 +2,27 @@
 % Please edit documentation in R/cochrane_orcutt.R
 \name{cochrane_orcutt}
 \alias{cochrane_orcutt}
-\title{Title of the function}
+\title{Cochrane-Orcutt Estimation Procedure}
 \usage{
 cochrane_orcutt(reg, convergence = 8, max.iter = 100)
 }
 \arguments{
-\item{x}{Description of parameter x.}
+\item{reg}{A linear model object from \code{lm()}.}
+
+\item{convergence}{Number of decimal places to check for convergence of \code{rho}. Default is 8.}
+
+\item{max.iter}{Maximum number of iterations allowed. Default is 100.}
 }
 \value{
-What the function returns.
+An object of class \code{orcutt}, which includes corrected coefficients, standard errors, residuals, fitted values,
+autocorrelation estimates, and model statistics.
 }
 \description{
-Description of what the function does.
+Applies the Cochrane-Orcutt iterative procedure to correct for first-order autocorrelation in linear regression residuals.
+}
+\examples{
+data(icecream)
+ols_model <- lm(cons ~ temp, data = icecream)
+oc_model <- cochrane_orcutt(ols_model)
+summary_orcutt(oc_model)
 }
