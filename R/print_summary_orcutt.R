@@ -6,7 +6,7 @@
 #' @param x An object of class \code{summary.orcutt}.
 #' @param ... Additional arguments (currently unused).
 #' @export
-print.summary.orcutt <- function(x, ...) {
+print_summary_orcutt <- function(x, ...) {
     cat("Call:\n")
     print(x$call)
     cat("\n")

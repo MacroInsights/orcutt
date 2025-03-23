@@ -13,7 +13,7 @@
 #'   \item{DW.t}{Durbin-Watson statistics.}
 #' }
 #' @export
-summary.orcutt <- function(object, ...) {
+summary_orcutt <- function(object, ...) {
     TAB <- cbind(
         Estimate = coef(object),
         StdErr = object$std.error,

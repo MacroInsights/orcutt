@@ -5,7 +5,7 @@
 #' @param x Description of parameter x.
 #' @return What the function returns.
 #' @export
-cochrane.orcutt <-
+cochrane_orcutt <-
 function(reg, convergence = 8, max.iter=100){
     #if (!require('lmtest')) {
     #  stop('The package lmtest was not installed')
